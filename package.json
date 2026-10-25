@@ -1,0 +1,29 @@
+{
+  "name": "techquiz-arena",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TechQuiz Arena - Offline-First Self-Hosted LAN Quiz Competition Platform",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "npm run start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "npm run dev:server",
+    "seed": "npm run seed --prefix server",
+    "test": "npm run test --prefix server",
+    "loadtest": "npm run loadtest --prefix server"
+  },
+  "keywords": [
+    "quiz",
+    "competition",
+    "lan",
+    "socketio",
+    "offline-first",
+    "education"
+  ],
+  "author": "TechQuiz Arena Team",
+  "license": "MIT"
+}
